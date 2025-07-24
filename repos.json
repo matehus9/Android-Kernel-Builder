@@ -1,11 +1,11 @@
 [  {
     "kernelSource": {
-      "name": "miku-KernelSU",
-      "repo": "https://github.com/PhamtomK12/kernel_xiaomi_odin",
-      "branch": "TDA",
-      "device": "odin"
+      "name": "xiaomi-ice-kernel",
+      "repo": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource",
+      "branch": "ice-s-oss",
+      "device": "ice"
     },
-    "withKernelSU": true,
+    "withKernelSU": false,
     "toolchains": [
       {
         "repo": "https://android.googlesource.com/platform/prebuilts/gas/linux-x86",
@@ -19,11 +19,11 @@
       }
     ],
     "params": {
-      "ARCH": "arm64",
-      "CROSS_COMPILE": "aarch64-linux-gnu-",
+      "ARCH": "arm",
+      "CROSS_COMPILE": "arm-linux-gnueabi-",
       "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
       "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
-      "CLANG_TRIPLE": "aarch64-linux-gnu-",
+      "CLANG_TRIPLE": "arm-linux-gnueabi-",
       "AR": "",
       "CC": "clang"
     }
